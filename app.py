@@ -36,3 +36,6 @@ if st.button('Predict'):
     features = [sepal_length, sepal_width, petal_length, petal_width]
     prediction = predict_species(features)
     st.write(f'The predicted species is: **{prediction}**')
+
+
+st.sidebar.header('Hello *World!* :sunglasses:')

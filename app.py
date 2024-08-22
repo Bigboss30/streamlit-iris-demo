@@ -39,4 +39,4 @@ if st.button('Predict'):
     st.write(f'The predicted species is: **{prediction}**')
 
 
-st.sidebar.header('Hello *World!* :sunglasses:')
+# st.sidebar.header('Hello *World!* :sunglasses:')

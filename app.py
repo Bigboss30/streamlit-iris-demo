@@ -1,7 +1,8 @@
-import streamlit as st
-import pandas as pd
 import joblib
+import pandas as pd
+import streamlit as st
 from sklearn.datasets import load_iris
+
 # Load the model
 model = joblib.load('iris_model.pkl')
 
@@ -11,7 +12,7 @@ iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
 iris_df['Species'] = pd.Categorical.from_codes(iris.target, iris.target_names)
 
 # Streamlit app
-st.title('Iris Dataset')
+st.title('Iris Dataset Hello2')
 
 # Display the first few rows of the dataset
 st.dataframe(iris_df.head())

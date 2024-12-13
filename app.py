@@ -12,7 +12,7 @@ iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
 iris_df['Species'] = pd.Categorical.from_codes(iris.target, iris.target_names)
 
 # Streamlit app
-st.title('Iris Dataset Hello2')
+st.title('Iris Dataset')
 
 # Display the first few rows of the dataset
 st.dataframe(iris_df.head())
